@@ -20,12 +20,12 @@ function App() {
   camera.position.z = 5;
 
   function animate(time){
-    // requestAnimationFrame( animate );
-    cube.rotation.x = time / 2000;
-    cube.rotation.y = time / 1000;
+    requestAnimationFrame( animate );
+    // cube.rotation.x = time / 2000;
+    // cube.rotation.y = time / 1000;
     renderer.render( scene, camera );
   }
-  // animate();
+  animate();
 
   console.log("App.jsx 실행")
 
